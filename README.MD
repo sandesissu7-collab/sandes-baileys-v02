@@ -69,7 +69,7 @@
 </div>
 
 > [!CAUTION]
-> @rexxtheproject has not released this baileys in npm so it is still in the form of a github fork
+> **@rexxtheproject** has not released this baileys in npm so it is still in the form of a github fork
 > `elaina-baileys` The old channel was banned due to an error by one of the admins, so we moved the information to the new channel.
 > Built on top of the WhiskeySockets/Baileys project. All original core logic credits go to their team. elaina-baileys extends it with thoughtful UX and DX improvements.
 > 🙌 Contributors outside the Baileys code
@@ -91,24 +91,25 @@ Thanks to the following awesome contributors who help improve this project 💖
 
 ### Via `package.json`
 
+[ NOT AVAILABLE NPM ]
 Fork Baileys (NPM) **@whiskeysockets/baileys** / **@adiwajshing/baileys**
 
 ```json
 @whiskeysockets/baileys
 "dependencies": {
-    "@whiskeysockets/baileys": "npm:@rexxhayanasi/elaina-baileys"
+    "@whiskeysockets/baileys": "github:@rexxtheproject/elaina-baileys"
 }
 ```
 ```json
 @adiwajsing/baileys
 "dependencies": {
-    "@adiwajshing/baileys": "npm:@rexxhayanasi/elaina-baileys"
+    "@adiwajshing/baileys": "github:@rexxtheproject/elaina-baileys"
 }
 ```
 
 Or via terminal non fork
 ```bash
-npm install elaina-bail@npm:@rexxhayanasi/elaina-baileys
+npm install elaina-baileys@github:@rexxtheproject/elaina-baileys
 ```
 
 Importing (for those who don't fork another repository)
@@ -116,12 +117,12 @@ ESM & CJS
 
 > ESM
 ```bash
-import makeWASocket from '@rexxhayanasi/elaina-baileys
+import makeWASocket from '@rexxtheproject/elaina-baileys
 ```
 
 > CJS
 ```bash
-const { default: makeWASocket } = require('@rexxhayanasi/elaina-baileys')
+const { default: makeWASocket } = require('@rexxtheproject/elaina-baileys')
 ```
 ---
 🌟 Key Features
@@ -299,7 +300,7 @@ Jika Anda menemukan bug atau kendala saat menggunakan proyek ini, silakan lakuka
 - **Hubungi maintainer langsung** melalui WhatsApp
 
 <p align="center">
-  <a href="https://wa.me/6285282530851" target="_blank" rel="noopener noreferrer">
+  <a href="https://wa.me/6285924647929" target="_blank" rel="noopener noreferrer">
     <img
       alt="Chat on WhatsApp"
       src="https://img.shields.io/badge/Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
