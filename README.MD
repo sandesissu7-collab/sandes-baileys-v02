@@ -14,48 +14,6 @@
     <img src="https://img.shields.io/npm/v/@rexxhayanasi/elaina-baileys?color=blueviolet&label=version&logo=npm" alt="npm version" />
   </a>
 
-  <!-- NPM Downloads -->
-  <a href="https://www.npmjs.com/package/@rexxhayanasi/elaina-baileys">
-    <img src="https://img.shields.io/npm/dt/@rexxhayanasi/elaina-baileys?color=blueviolet&label=downloads&logo=npm" alt="npm downloads" />
-  </a>
-
-  <!-- License -->
-  <a href="https://www.npmjs.com/package/@rexxhayanasi/elaina-baileys">
-    <img src="https://img.shields.io/npm/l/@rexxhayanasi/elaina-baileys?color=success&label=license" alt="license" />
-  </a>
-
-  <!-- Bundle Size -->
-  <a href="https://bundlephobia.com/package/@rexxhayanasi/elaina-baileys">
-    <img src="https://img.shields.io/bundlephobia/min/@rexxhayanasi/elaina-baileys?label=minified%20size&color=orange" alt="bundle size" />
-  </a>
-
-  <!-- Gzip Bundle Size -->
-  <a href="https://bundlephobia.com/package/@rexxhayanasi/elaina-baileys">
-    <img src="https://img.shields.io/bundlephobia/minzip/@rexxhayanasi/elaina-baileys?label=minzip%20size&color=orange" alt="gzip bundle size" />
-  </a>
-
-  <!-- PackagePhobia Install Size -->
-  <a href="https://packagephobia.com/result?p=@rexxhayanasi/elaina-baileys">
-    <img src="https://packagephobia.com/badge?p=@rexxhayanasi/elaina-baileys" alt="install size" />
-  </a>
-
-  <!-- Code Quality (Codacy) -->
-  <a href="https://app.codacy.com">
-    <img src="https://img.shields.io/badge/Codacy-Quality%20Check-blue?logo=codacy" alt="Codacy quality" />
-  </a>
-
-  <!-- Security Scan (Snyk) -->
-  <a href="https://snyk.io">
-    <img src="https://img.shields.io/badge/Snyk-Security%20Scan-purple?logo=snyk" alt="Snyk security" />
-  </a>
-
-  <!-- Node Engine Support -->
-  <img src="https://img.shields.io/node/v/@rexxhayanasi/elaina-baileys?label=node%21engine" alt="node engine" />
-
-  <!-- Types -->
-  <img src="https://img.shields.io/npm/types/@rexxhayanasi/elaina-baileys?label=types" alt="types" />
-</p>
-
 <p>
   <!-- WhatsApp Channel -->
   <a href="https://whatsapp.com/channel/0029VbCa8LKBFLgNswevBG2w">
@@ -69,7 +27,6 @@
 </div>
 
 > [!CAUTION]
-> **@rexxtheproject** has not released this baileys in npm so it is still in the form of a github fork
 > `elaina-baileys` The old channel was banned due to an error by one of the admins, so we moved the information to the new channel.
 > Built on top of the WhiskeySockets/Baileys project. All original core logic credits go to their team. elaina-baileys extends it with thoughtful UX and DX improvements.
 > 🙌 Contributors outside the Baileys code
@@ -91,7 +48,23 @@ Thanks to the following awesome contributors who help improve this project 💖
 
 ### Via `package.json`
 
-[ NOT AVAILABLE NPM ]
+[ NPM ]
+Fork Baileys (NPM) **@whiskeysockets/baileys** / **@adiwajshing/baileys**
+
+```json
+@whiskeysockets/baileys
+"dependencies": {
+    "@whiskeysockets/baileys": "npm:@rexxtheproject/elaina-baileys"
+}
+```
+```json
+@adiwajsing/baileys
+"dependencies": {
+    "@adiwajshing/baileys": "npm:@rexxtheproject/elaina-baileys"
+}
+```
+
+[ GITHUB ]
 Fork Baileys (NPM) **@whiskeysockets/baileys** / **@adiwajshing/baileys**
 
 ```json
@@ -111,6 +84,8 @@ Or via terminal non fork
 ```bash
 npm install elaina-baileys@github:@rexxtheproject/elaina-baileys
 ```
+
+---
 
 Importing (for those who don't fork another repository)
 ESM & CJS
