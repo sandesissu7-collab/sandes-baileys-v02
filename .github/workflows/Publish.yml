@@ -47,5 +47,3 @@ jobs:
           for i in 1 2 3; do
             npm publish --access public && break || (echo "Retrying publish ($i)..." && sleep 15)
           done
-
-Benerin yml ini
