@@ -68,7 +68,7 @@ async function main() {
     const vStr = `[${version.join(', ')}]`;
     
     updateJson('lib/Defaults/baileys-version.json', version);
-    updateFile('lib/Defaults/index.js', /exports\.version\s*=\s*\[\d+,\s*\d+,\s*\d+\]/g, `exports.version = ${vStr}`);
+    updateFile('lib/Defaults/index.js', /const\.version\s*=\s*\[\d+,\s*\d+,\s*\d+\]/g, `const.version = ${vStr}`);
 
     console.log('Update complete!');
 }
