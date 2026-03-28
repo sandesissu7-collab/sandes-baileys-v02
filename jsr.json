@@ -1,0 +1,15 @@
+{
+  "name": "@rexxtheproject/elaina-baileys",
+  "version": "1.0.4",
+  "exports": "./lib/index.js",
+  "publish": {
+    "include": [
+      "lib/**/*.js",
+      "lib/**/*.json",
+      "WAProto/**/*",
+      "package.json",
+      "jsr.json",
+      "README.md"
+    ]
+  }
+}
