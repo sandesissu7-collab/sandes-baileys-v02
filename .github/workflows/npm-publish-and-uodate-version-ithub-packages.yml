@@ -24,7 +24,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Update WhatsApp Web Version
-        run: node scripts/update-wa-version.js
+        run: node script/Update-version.js
 
       - name: Commit and Push changes
         env:
