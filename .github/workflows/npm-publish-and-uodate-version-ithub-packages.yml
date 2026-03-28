@@ -48,7 +48,7 @@ jobs:
           git add package.json
 
           git commit -m "chore: update WhatsApp Web version and release"
-          git pull --rebase origin main
-          git push origin main
+          git pull --rebase origin master
+          git push origin master
           
           npm publish --access public
