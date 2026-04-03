@@ -1,7 +1,7 @@
 {
-  "name": "@rexxtheproject/elaina-baileys",
+  "name": "sandes-baileys-v2",
   "version": "1.0.6",
-  "description": "Baileys Modifications That Are Useful for WhatsApp Bot ESM & CJS Developed by RexxHayanasi",
+  "description": "Baileys Modifications That Are Useful for WhatsApp Bot ESM & CJS Developed by mr.sandes",
   "keywords": [
     "baileys",
     "baileys-mod",
@@ -16,7 +16,7 @@
     "RexxHayanasi"
   ],
   "license": "MIT",
-  "author": "RexxHayanasi",
+  "author": "mrsandes",
   "main": "./lib/index.js",
   "files": [
     "lib/*",
