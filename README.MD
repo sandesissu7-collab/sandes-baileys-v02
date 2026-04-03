@@ -1,11 +1,11 @@
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 <div align="center">
-  <h1>💫 @rexxtheproject/elaina-baileys </h1>
+  <h1> 🎀 SANDES-BAILEYS-V2 🎀</h1>
   <p><em>Custom WhatsApp library built upon Baileys — enhanced, modernized, and elegant.</em></p>
 </p>
 
-  <img src="https://files.catbox.moe/dulwdz.jpeg" width="400" alt="Elaina Bail Banner" style="border-radius: 15px; border: 2px solid #ff0000;" />
+  <img src="https://files.catbox.moe/2xpu3x.png" width="400" alt="Elaina Bail Banner" style="border-radius: 15px; border: 2px solid #ff0000;" />
   <br><br>
 
   <p>
@@ -16,7 +16,7 @@
 
 <p>
   <!-- WhatsApp Channel -->
-  <a href="https://whatsapp.com/channel/0029VbCa8LKBFLgNswevBG2w">
+  <a href="https://whatsapp.com/channel/0029VbAEkzNFi8xevDsbJS1L">
     <img src="https://img.shields.io/badge/Join-WhatsApp%20Channel-25D366?logo=whatsapp&logoColor=white" alt="WhatsApp Channel" />
   </a>
 </p>
@@ -26,16 +26,19 @@
   <img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b636-4676-a213-39d67b2d5d67.gif" width="100%">
 </div>
 
-> [!CAUTION]
-> `elaina-baileys` The old channel was banned due to an error by one of the admins, so we moved the information to the new channel.
-> Built on top of the WhiskeySockets/Baileys project. All original core logic credits go to their team. elaina-baileys extends it with thoughtful UX and DX improvements.
-> 🙌 Contributors outside the Baileys code
-Thanks to the following awesome contributors who help improve this project 💖
 ---
 
+> ⚠️ **Notice**  
+> This project is based on the Baileys library. All core credits go to the original developers.  
+> `sandes-baileys-v2` extends it with custom features, improved performance, and better developer experience.
+
+---
 
 ## 📌 Overview
->  `elaina-baileys` is a refined version of the Baileys library with cleaner API usage, exclusive features like album messaging, newsletter controls, and full-size profile uploads — tailored for modern WhatsApp automation needs.
+
+`sandes-baileys-v2` is a modern WhatsApp bot base built on top of Baileys.  
+It is designed for **speed, stability, and flexibility**, making it easy to build powerful WhatsApp bots.
+
 
 > **Update** 
 > All update information is now redirected to the WhatsApp channel check at the bottom of the "homepage".
@@ -49,55 +52,46 @@ Thanks to the following awesome contributors who help improve this project 💖
 ### Via `package.json`
 
 [ NPM ]
-Fork Baileys (NPM) **@whiskeysockets/baileys** / **@adiwajshing/baileys**
+Fork Baileys (NPM) **@whiskeysockets/baileys** / **npm:sandes-baileys-v2**
 
 ```json
 @whiskeysockets/baileys
 "dependencies": {
-    "@whiskeysockets/baileys": "npm:@rexxtheproject/elaina-baileys"
+    "@whiskeysockets/baileys": "npm:sandes-baileys-v2"
 }
 ```
 ```json
 @adiwajsing/baileys
 "dependencies": {
-    "@adiwajshing/baileys": "npm:@rexxtheproject/elaina-baileys"
+    "@adiwajshing/baileys": "npm:sandes-baileys-v2"
 }
-```
 
-[ GITHUB ]
-Fork Baileys (NPM) **@whiskeysockets/baileys** / **@adiwajshing/baileys**
 
 ```json
 @whiskeysockets/baileys
 "dependencies": {
-    "@whiskeysockets/baileys": "github:@rexxtheproject/elaina-baileys"
+    "@whiskeysockets/baileys": "npm:sandes-baileys-v2"
 }
 ```
 ```json
 @adiwajsing/baileys
 "dependencies": {
-    "@adiwajshing/baileys": "github:@rexxtheproject/elaina-baileys"
+    "@adiwajshing/baileys": "npm:sandes-baileys-v2"
 }
 ```
 
-Or via terminal non fork
-```bash
-npm install elaina-baileys@github:@rexxtheproject/elaina-baileys
-```
-
----
 
 Importing (for those who don't fork another repository)
 ESM & CJS
 
 > ESM
 ```bash
-import makeWASocket from '@rexxtheproject/elaina-baileys
+import makeWASocket from 'npm:sandes-baileys-v2
 ```
 
 > CJS
 ```bash
-const { default: makeWASocket } = require('@rexxtheproject/elaina-baileys')
+const { default: makeWASocket } = require('npm:sandes-baileys-v2')
 ```
 ---
 🌟 Key Features
@@ -116,24 +110,24 @@ const { default: makeWASocket } = require('@rexxtheproject/elaina-baileys')
 ## 🚀 Features & Usage
 
 ### 📬 Newsletter Control
-Kelola WhatsApp Newsletter (Channel), mulai dari pembuatan hingga interaksi pesan.
+Manage WhatsApp Newsletters (Channels), from creation to message interaction.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example 👇</strong></summary>
 
 ```js
 // Create a newsletter
-await sock.newsletterCreate("Elaina Updates");
+await sock.newsletterCreate("sandes Updates");
 
 // Update description
 await sock.newsletterUpdateDescription(
-  "elaina@newsletter",
+  "sandes@newsletter",
   "Fresh updates weekly"
 );
 
 // React to a channel message
 await sock.newsletterReactMessage(
-  "elaina@newsletter",
+  "sandes@newsletter",
   "175",
   "🔥"
 );
@@ -143,10 +137,10 @@ await sock.newsletterReactMessage(
 ---
 
 ### 📌 Interactive Messaging
-Kirim pesan interaktif menggunakan tombol untuk meningkatkan interaksi pengguna.
+Send interactive messages using buttons to increase user engagement.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example 👇</strong></summary>
 
 ```js
 const buttons = [
@@ -155,8 +149,8 @@ const buttons = [
 ];
 
 await sock.sendMessage(id, {
-  text: "Choose one:",
-  footer: "From Elaina with love 💜",
+  text: "click one:",
+  footer: "From sandes",
   buttons,
   headerType: 1
 });
@@ -167,10 +161,10 @@ await sock.sendMessage(id, {
 ---
 
 ### 🖼️ Send Album
-Kirim beberapa media (gambar atau video) dalam satu pesan album.
+Send multiple media files (images or videos) within a single album message.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example 👇</strong></summary>
 
 ```js
 const media = [
@@ -180,7 +174,7 @@ const media = [
 
 await sock.sendMessage(
   id,
-  { album: media, caption: "Memories 💫" }
+  { album: media, caption: "New album" }
 );
 ```
 
@@ -189,13 +183,13 @@ await sock.sendMessage(
 ---
 
 ### 🔐 Custom Pairing Code
-Pairing perangkat WhatsApp menggunakan kode kustom.
+Pair WhatsApp devices using a custom pairing code.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example 👇</strong></summary>
 
 ```js
-const code = await sock.requestPairingCode("62xxxxxxxxxx","ELAINA01");
+const code = await sock.requestPairingCode("94xxxxxxx","SANDESMD");
 
 console.log("Pairing Code:", code);
 ```
@@ -205,10 +199,10 @@ console.log("Pairing Code:", code);
 ---
 
 ### 📊 Poll Creation
-Buat polling untuk voting cepat di chat atau grup.
+Create polls for quick voting in chats or groups.
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example 👇</strong></summary>
 
 ```js
 await sock.sendMessage(id, {
@@ -224,33 +218,13 @@ await sock.sendMessage(id, {
 
 ---
 
-### 📍 Location Sharing
-Bagikan lokasi lengkap dengan koordinat dan alamat.
-
-<details>
-<summary><strong>Lihat Contoh</strong></summary>
-
-```js
-await sock.sendMessage(id, {
-  location: {
-    degreesLatitude: 37.422,
-    degreesLongitude: -122.084,
-    name: "Googleplex",
-    address: "1600 Amphitheatre Pkwy, Mountain View"
-  }
-});
-```
-
-</details>
-
----
 
 ### 👥 Group Management
-Kelola grup WhatsApp: membuat grup, menambah anggota, dan memperbarui deskripsi.
+Manage WhatsApp groups: create groups, add members, and update descriptions.
 
 
 <details>
-<summary><strong>Lihat Contoh</strong></summary>
+<summary><strong>Example 👇</strong></summary>
 
 ```js
 const group = await sock.groupCreate(
@@ -267,59 +241,51 @@ await sock.groupUpdateDescription(group.id,"This is our awesome group!"
 
 ---
 
-### 🐞 Menemukan Bug?
+🐞 Found a Bug?
+If you encounter a bug or any issues while using this project, please choose one of the following options:
 
-Jika Anda menemukan bug atau kendala saat menggunakan proyek ini, silakan lakukan salah satu opsi berikut:
+Open an Issue via the official website (coming soon)
 
-- **Buka Issue** melalui website resmi (segera hadir)
-- **Hubungi maintainer langsung** melalui WhatsApp
+Contact the maintainer directly via WhatsApp
 
 <p align="center">
-  <a href="https://wa.me/6285924647929" target="_blank" rel="noopener noreferrer">
-    <img
-      alt="Chat on WhatsApp"
-      src="https://img.shields.io/badge/Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
-    />
-  </a>
+<a href="https://wa.me/94787518010" target="_blank" rel="noopener noreferrer">
+<img
+alt="Chat on WhatsApp"
+src="https://img.shields.io/badge/Chat%20on%20WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"
+/>
+</a>
 </p>
+
 <details>
-<summary>🙏 <strong>TQTO (Thanks To)</strong></summary>
+<summary>🎀 <strong>Special Thanks to</strong></summary>
 
-Terima kasih kepada semua pihak yang telah memberikan dukungan, inspirasi, serta kontribusi—baik secara langsung maupun tidak langsung—dalam pengembangan proyek ini:
+Thanks to everyone who has provided support, inspiration, and contributions—both directly and indirectly—to the development of this project:
 
-- **Allah SWT** — atas segala rahmat, kemudahan, dan perlindungan-Nya.
-- **Orang Tua** — atas kasih sayang, doa, dan dukungan yang tiada henti.
-- **RexxHayanasi (Saya)** — pengembang utama proyek ini.
+RexxHayanasi (Me) — the lead developer of this project.
 
 </details>
-
 <table>
 <tr>
 <td align="center">
-<a href="https://github.com/rexxtheproject">
-<img src="https://avatars.githubusercontent.com/u/266297437?v=4" width="80px;" style="border-radius:50%;" alt="Rexx"/>
+<a href="https://github.com/sandesissu7-collab">
+<img src="https://files.catbox.moe/hmao6h.jpg" width="80px;" style="border-radius:50%;" alt="Rexx"/>
 <br />
-<sub><b>RexxTheProject  || RexxHayanasi [ developer project ]</b></sub>
+<sub><b>MR.SANDES [ DEVELOPER AND FOUNDER ]</b></sub>
 </a>
 </td>
 
-<tr>
-<td align="center">
-<a href="https://github.com/rexxhayanasi">
-<img src="https://avatars.githubusercontent.com/u/150516773?v=4" width="80px;" style="border-radius:50%;" alt="Rexx"/>
-<br />
-<sub><b>RexxHayanasi [ Second Account ]</b></sub>
-</a>
-</td>
+---
 
-<td align="center">
-<a href="https://github.com/kiuur">
-<img src="https://avatars.githubusercontent.com/u/182334162?v=4" width="80px;" style="border-radius:50%;" alt="Kiuu"/>
-<br />
-<sub><b>Kyuu [ kiuur ]</b></sub>
-</a>
-</td>
-</tr>
-</table>
+<div align="center">
+
+## 🍒 SANDES-BAILEYS-V2 
+### **MR.SANDES 🍒**
+
+<p><em>Designed with passion • Built for performance ⚡</em></p>
+
+</div>
+
+---
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%" style="transform: rotate(180deg);">
